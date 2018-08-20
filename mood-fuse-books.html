@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giftastic</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Sigmar+One|Special+Elite" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+        <script src="https://www.gstatic.com/firebasejs/5.4.0/firebase.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js">
+    </script>
+    <script type="text/javascript" src="mood-fuse-books.js">
+    </script>
+    
+    <div class="jumbotron">
+        <h1 class="display-4">Mood Fuse</h1>
+        <p class="lead">This is a simple recommendation app to help you choose a book, cocktail, or movie based on your mood.</p>
+        <hr class="my-4">
+        <p>Choose a mood to get started</p>
+        
+<button data-mood = "Happy" type="button" class="btn btn-happy">Happy</button>
+<button data-mood  = "Sad" type="button" class="btn btn-sad">Sad</button>
+<button data-mood  = "Angry" type="button" class="btn btn-angry">Angry</button>
+<button  data-mood  = "Love" type="button" class="btn btn-love">Love</button>
+<button data-mood  = "Sick" type="button" class="btn btn-sick">Sick</button>
+<button data-mood  = "Sleepy" type="button" class="btn btn-sleepy">Sleepy</button>
+<p>Here is your top choice:</p>
+<div class="results" style="width: 18rem;">
+    
+  </div>
+      </div>
+<!-- Form for asking user reviews -->
+
+<form id = "reviewform">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        
+        
+        
+        <div class="form-group">
+          <label for="exampleTextarea">Leave your review here!</label>
+          <textarea class="form-control" id="ReviewTextarea" rows="3"></textarea>
+        </div>
+        
+        
+        
+        <button type="submit" class="btn btn-primary review-submit">Submit</button>
+      </form>
+<!-- Current Reviews-->
+<div class="card mb-4">
+        <div class="card-body">
+          <h3 class="card-title">Current Reviews</h3>
+          <table class="table table-sm table-hover" id='review-table'>
+            <thead>
+              <tr>
+                <th scope="col">Employee Email</th>
+                <th scope="col">Review</th>
+               
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+</body>
+</html>
