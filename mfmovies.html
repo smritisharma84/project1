@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mood Fuse</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel = "stylesheet" href = "assets/css/style.css">
+</head>
+<body>
+     
+  <header>
+      <h1>Mood Fuse</h1>
+  </header>
+  <h5> Select a mood </h5>  
+ 
+
+ <button data-name="happy" id="happy" type="button" value="happy" class="btn btn-success"><img src = "assets/images/smile.png"></button> 
+ <button data-name="sad" id="sad" type="button" value="sad" class="btn btn-success"><img src = "assets/images/sad.png"></button>      		
+ <button data-name="tired" id="tired" type="button" value="tired" class="btn btn-success"><img src = "assets/images/sleepy.png"></button>
+
+ <h3>Recommendations:</h3>
+ <div class = "container">
+        <div class = "row">
+                <div class="col-md-6 movieresults"></div>
+                <div class = "col-md-6 bookresults"></div>
+                <div class = "col-md-4 drinksresult"></div>
+             </div>
+ </div>
+
+     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+     <script type = "text/javascript" src = "assets/javascript/config.js"></script>
+      <script type="text/javascript" src="assets/javascript/mfmovies.js"></script>
+
+</body>
+</html>
