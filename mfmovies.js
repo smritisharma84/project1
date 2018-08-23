@@ -30,27 +30,35 @@
      
       if (a === "happy"){
         queryURL = queryURL1;
+        //console.log("Comedy");
+        $("#movietitle").html("<h3>Comedy<h3>");
       }
 
    
       if (a === "sad"){
        queryURL = queryURL2;
+       $("#movietitle").html("<h3>Horror<h3>");
+
       }
 
       if (a === "bored"){
        queryURL = queryURL3;
+       $("#movietitle").html("<h3>Action<h3>");
       }
 
       if (a === "sleepy"){
        queryURL = queryURL4;
+       $("#movietitle").html("<h3>Fantasy<h3>");
       }
 
       if (a === "love"){
        queryURL = queryURL5;
+       $("#movietitle").html("<h3>Romance<h3>");
       }
 
       if (a === "angry"){
        queryURL = queryURL6;
+       $("#movietitle").html("<h3>Drama<h3>");
       }
 
      
@@ -69,7 +77,7 @@
 
          //image result
          var imageResult = config +'w300' + response.results[i].poster_path;
-         var movieDiv = $('<div class="movie">');
+         var movieDiv = $('<div class="movie col-md-4">');
          var image = $("<img>").attr("src", imageResult);
 
          //movie title
@@ -86,13 +94,20 @@
          //var overview
          var overview = response.results[i].overview;
          var overviewText = $("<p>").text("Plot: " + overview);
+
+         //var genre = response.results.id;
+         //console.log(genre);s
+
   
          
          movieDiv.append(image);
          movieDiv.prepend(movieHeaderTitle);
          movieDiv.append(voteaverageRated);
          movieDiv.append(overviewText);
+         
          $("#movieresults").prepend(movieDiv);
+         // $("#moviestitle").append(genre);
+        
            }
 
        });
