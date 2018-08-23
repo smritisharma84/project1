@@ -14,18 +14,20 @@
   <h5> Select a mood </h5>  
  
 
- <button data-mood="happy" id="happy" type="button" value="happy" class="btn btn-success"><img src = "assets/images/smile.png"></button> 
- <button data-mood="sad" id="sad" type="button" value="sad" class="btn btn-success"><img src = "assets/images/sad.png"></button>      		
- <button data-mood="tired" id="tired" type="button" value="tired" class="btn btn-success"><img src = "assets/images/sleepy.png"></button>
+ <button data-name="happy" id="happy" type="button" value="happy" class="btn btn-success">happy</button> 
+ <button data-name="sad" id="sad" type="button" value="sad" class="btn btn-success">sad</button>      		
+ <button data-name="angry" id="angry" type="angry" value="angry" class="btn btn-success">angry</button>
+ <button data-name="love" id="love" type="love" value="love" class="btn btn-success">love</button>
+ <button data-name="bored" id="bored" type="bored" value="bored" class="btn btn-success">bored</button>
+ <button data-name="sleepy" id="sleepy" type="sleepy" value="sleepy" class="btn btn-success">sleepy</button>
 
  <h3>Recommendations:</h3>
- <div class = "container">
-        <div class = "row">
-                <div class="col-md-6 movieresults"></div>
-                <div class = "col-md-6 bookresults"></div>
-                <div class = "col-md-4 drinksresult"></div>
-             </div>
- </div>
+
+                <div id = "movietitle"></div>
+                
+                <div id= "movieresults"></div>
+               
+ 
 
      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
      <script type = "text/javascript" src = "assets/javascript/config.js"></script>
